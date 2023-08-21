@@ -62,11 +62,14 @@ window.onresize = resizeFn;
 clearButton.addEventListener("click", startGame);
 rainbowModeButton.addEventListener("click", () => {
   rainbowMode = true;
-  rainbowModeButton.style.cssText = "background-color: orange; color: white;";
+  colorModeButton.classList.toggle("active-button");
+  rainbowModeButton.classList.toggle("active-button");
   startGame();
 });
 colorModeButton.addEventListener("click", () => {
   rainbowMode = false;
+  colorModeButton.classList.toggle("active-button");
+  rainbowModeButton.classList.toggle("active-button");
   startGame();
 });
 

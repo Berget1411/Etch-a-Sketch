@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #d2d2d2;
+  background-color: #e0dede;
 }
 
 main {
@@ -14,8 +14,11 @@ main {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5em;
   margin: 0;
+  color: #333333;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 #settings {
@@ -38,13 +41,18 @@ h1 {
   background-color: white;
 }
 
-#settings button {
+button {
   background-color: #d2d2d2;
   border: 1px solid black;
   font-size: 1em;
   padding: 6px 12px;
   border-radius: 8%;
   transition: transform 0.2s;
+}
+
+.active-button {
+  background-color: #333333;
+  color: white;
 }
 
 #settings button:hover {
@@ -85,13 +93,17 @@ footer {
   justify-content: center;
   padding: 40px;
   gap: 10px;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 @media screen and (max-width: 500px) {
   #draw-grid {
     width: 300px;
     height: 300px;
+  }
+
+  h1 {
+    font-size: 4em;
   }
 
   #settings {
@@ -111,5 +123,9 @@ footer {
   .dot {
     height: 30px;
     width: 30px;
+  }
+
+  footer p {
+    font-size: 0.8em;
   }
 }
