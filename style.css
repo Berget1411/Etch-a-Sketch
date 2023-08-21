@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #d2d2d2;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+#settings {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+}
+
+#draw-area {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#settings button {
+  background-color: #d2d2d2;
+  border: 1px solid black;
+  font-size: 1em;
+  padding: 6px 12px;
+  border-radius: 8%;
+  transition: transform 0.2s;
+}
+
+#settings button:hover {
+  transform: scale(1.06);
+}
+
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.dot:hover {
+  transform: scale(1.06);
+}
+
+#range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 25px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+  #draw-area {
+    width: 300px;
+    height: 300px;
+  }
+
+  #settings {
+    width: 300px;
+    gap: 15px;
+  }
+
+  #settings button {
+    font-size: 0.75em;
+    padding: 4px 8px;
+  }
+
+  #settings input {
+    width: 40px;
+  }
+
+  .dot {
+    height: 30px;
+    width: 30px;
+  }
+}
