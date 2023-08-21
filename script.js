@@ -21,3 +21,14 @@ const handleRangeChange = () => {
 };
 
 rangeInput.addEventListener("input", handleRangeChange);
+
+rangeInput.value = 16;
+handleRangeChange();
+
+//if screenwidth is less than 600, update grid
+const resizeFn = () => {
+  if (window.innerWidth < 600) {
+    handleRangeChange();
+  }
+};
+window.onresize = resizeFn;
