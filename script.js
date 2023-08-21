@@ -10,6 +10,10 @@ const makeRow = (col, row) => {
       (1 / col) * drawGrid.offsetWidth
     }px; width: ${(1 / row) * drawGrid.offsetWidth}px`;
     cell.classList.add("cell");
+    cell.addEventListener(
+      "mouseover",
+      () => (cell.style.backgroundColor = "black")
+    );
     drawGrid.appendChild(cell);
   }
 };
